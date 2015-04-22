@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('bundles/videoemoticon/css/smile.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    <div id = gen_wrapper>
+    <div id="video_container">
+
+    </div>
+
+    <div id="icon_holder">
+        Choose emotion:
+        <a class="emoticon_button smile" href="javascript:void(0);" ></a>
+        <a class="emoticon_button sad" href="javascript:void(0);" ></a>
+        <a class="emoticon_button laugh" href="javascript:void(0);" ></a>
+        <a class="emoticon_button giggle" href="javascript:void(0);" ></a>
+        <a class="emoticon_button crying" href="javascript:void(0);" ></a>
+        <a class="emoticon_button surprised" href="javascript:void(0);" ></a>
+        <div id="emo_animate" style="height: 40px; position: relative;"></div>
+    </div>
+
+
+    <div id="pos_wrapper">
+    Other people's emotions:
+    <div id="emoticons"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block javascripts  %}
+    {{ parent() }}
+    {% set video_id = 'w0ffwDYo00Q' %}
+    <script>
+        window.emotion_post_url = "{{path('video_emoticon_add_emotion')}}";
+        window.video_id = "{{ video_id }}";
+        window.emotion_get_url = "{{path('video_emoticon_get_emotion', {'video_id': video_id})}}";
+    </script>
+    <script src="https://www.youtube.com/player_api"></script>
+    {% javascripts '@VideoEmoticonBundle/Resources/public/js/video_emoticon.js' %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+{% endblock %}

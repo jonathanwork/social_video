@@ -1,0 +1,15 @@
+video_emoticon_homepage:
+    path:     /
+    defaults: { _controller: VideoEmoticonBundle:Main:index }
+
+video_emoticon_add_emotion:
+    path: /emotion/add
+    defaults: { _controller: VideoEmoticonBundle:Emotion:addEmotion, _format: json }
+    requirements:
+      _method: POST
+
+video_emoticon_get_emotion:
+    path: /emotion/get/{video_id}
+    defaults: { _controller: VideoEmoticonBundle:Emotion:getEmotion, _format: json }
+    requirements:
+      _method: GET

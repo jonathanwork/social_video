@@ -1,0 +1,4 @@
+video_emoticon:
+    resource: "@VideoEmoticonBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,45 @@
+.smile{
+    background: url("https://az545221.vo.msecnd.net/skype-faq-media/faq_content/skype/screenshots/fa12330/emoticons/smile_20.png") no-repeat ;
+}
+.sad{
+    background: url("https://az545221.vo.msecnd.net/skype-faq-media/faq_content/skype/screenshots/fa12330/emoticons/sadsmile_20.png") no-repeat;
+}
+.laugh{
+    background: url("https://az545221.vo.msecnd.net/skype-faq-media/faq_content/skype/screenshots/fa12330/emoticons/bigsmile_20.png") no-repeat;
+}
+.giggle{
+    background: url("https://az545221.vo.msecnd.net/skype-faq-media/faq_content/skype/screenshots/fa12330/emoticons/giggle_20.png") no-repeat;
+}
+.surprised{
+    background: url("https://az545221.vo.msecnd.net/skype-faq-media/faq_content/skype/screenshots/fa12330/emoticons/surprised.png") no-repeat;
+}
+.crying{
+    background: url("https://az545221.vo.msecnd.net/skype-faq-media/faq_content/skype/screenshots/fa12330/emoticons/crying_20.png") no-repeat;
+}
+
+.emoticon_button{
+    background-position: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid grey;
+}
+.emoticon_button:hover{
+    border: 1px solid red;
+}
+#pos_wrapper{
+    position: relative;
+    top:15px;
+}
+.emotion{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+#gen_wrapper{
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
