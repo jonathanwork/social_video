@@ -34,6 +34,7 @@
     {{ parent() }}
     {% set video_id = 'w0ffwDYo00Q' %}
     <script>
+
         window.emotion_post_url = "{{path('video_emoticon_add_emotion')}}";
         window.video_id = "{{ video_id }}";
         window.emotion_get_url = "{{path('video_emoticon_get_emotion', {'video_id': video_id})}}";
